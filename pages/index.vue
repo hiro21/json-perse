@@ -1,5 +1,6 @@
 <template>
-  <JsonPerse />
+  <JsonPerse>
+  </JsonPerse>
 </template>
 
 <script lang="ts">
