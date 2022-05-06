@@ -1,5 +1,5 @@
 <template>
-  <Tutorial />
+  <JsonPerse />
 </template>
 
 <script lang="ts">
