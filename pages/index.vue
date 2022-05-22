@@ -1,11 +1,9 @@
 <template>
   <div>
   <JsonPerse 
-    perseJsonTest.sync="perseJsonTest"
-    perseResultTextarea.sync="perseResultTextarea"
+    @jsonInput="onClickEventPerse"
   >
   </JsonPerse>
-  <button type="button" class="btn btn-dark" @click="onClickEventPerse">submit</button>
   </div>
 </template>
 
@@ -19,8 +17,9 @@ export default Vue.extend({
     JsonPerse
   },
   methods: {
-        onClickEventPerse(event: Event): void {
-          console.log(event)
+        onClickEventPerse(jsonVal: string): void {
+          console.log(jsonVal)
+          // perseを呼ぶ
         }
     }
 })
