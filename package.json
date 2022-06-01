@@ -4,7 +4,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "nuxt",
+    "dev": "nuxt & node --loader ts-node/esm main.ts",
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
