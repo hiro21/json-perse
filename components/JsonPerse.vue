@@ -3,6 +3,7 @@
       <label for="perseJsonTextarea" class="form-label">before json text</label>
       <textarea v-model="perseJsonText" class="form-control" id="perseJsonTextarea" rows="3"></textarea>
       <button type="button" class="btn btn-dark" @click="onClickEventPerse">submit</button>
+      <button type="button" class="btn btn-dark" @click="onClickEventPostPerse">post</button>
     </div>
 </template>
 <script lang="ts">
@@ -21,6 +22,9 @@ export default Vue.extend({
         onClickEventPerse(): void {
             this.$emit("jsonInput", this.perseJsonText)
         },
+        onClickEventPostPerse(): void {
+            this.$emit("jsonPostInput", this.perseJsonText)
+        }
     },
 })
 
